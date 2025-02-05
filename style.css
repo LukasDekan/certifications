@@ -3,5 +3,24 @@
 
 :root{
     font-family: 'Comfortaa';
-    background-color: bisque;
+    background-color: rgb(231, 44, 44);
+    color: white;
+}
+
+
+.controller{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+}
+#meme {
+    align-self: flex-end;
+    width: 5%;
+}
+#hero{
+   align-self: center;
+   width: 70%;
 }

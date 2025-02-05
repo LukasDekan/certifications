@@ -5,12 +5,18 @@ list = {
     issuerName: prompt("What is your name?")
 };
 
-var newcontent = document.createElement('h1');
+var newcontent = document.createElement('h2');
 newcontent.id = 'syndicated-content';
 newcontent.appendChild(document.createTextNode(list.friendName));
 
 var scr = document.getElementById('test');
 scr.parentNode.insertBefore(newcontent, scr);
+
+
+// const jackBlack = new Image(438, 248);
+// jackBlack.src = "/img/jack-black.jpg";
+// document.body.appendChild(jackBlack);
+
 
 
 
@@ -22,7 +28,10 @@ var scr = document.getElementById('test');
 scr.parentNode.insertBefore(newcontent, scr);
 
 
-
+function favTutorial() {  
+    var mylist = document.getElementById("myList");  
+    document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
+    }  
 
 
 var newcontent = document.createElement('p');
@@ -40,7 +49,6 @@ newcontent.appendChild(document.createTextNode(list.issuerName));
 
 var scr = document.getElementById('test');
 scr.parentNode.insertBefore(newcontent, scr);
-
 
 
 // function calcPrompt(){
