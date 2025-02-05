@@ -2,24 +2,44 @@ list = {
     friendName:  prompt("What is your friend's name?"),
     type: prompt("What are you rewarding him for?"),
     title: prompt("How skilled is your friend in this area?"),
-    issuerName: (prompt("What is your name?"))
+    issuerName: prompt("What is your name?")
 };
 
-document.write(list.friendName);
-document.write(list.type);
-document.write(list.title);
-document.write(list.issuerName);
+var newcontent = document.createElement('h1');
+newcontent.id = 'syndicated-content';
+newcontent.appendChild(document.createTextNode(list.friendName));
 
-document.getElementById('output1').innerHTML = 'Some text!';
-
-
+var scr = document.getElementById('test');
+scr.parentNode.insertBefore(newcontent, scr);
 
 
 
+var newcontent = document.createElement('p');
+newcontent.id = 'syndicated-content';
+newcontent.appendChild(document.createTextNode(list.type));
+
+var scr = document.getElementById('test');
+scr.parentNode.insertBefore(newcontent, scr);
 
 
 
 
+
+var newcontent = document.createElement('p');
+newcontent.id = 'syndicated-content';
+newcontent.appendChild(document.createTextNode(list.title));
+
+var scr = document.getElementById('test');
+scr.parentNode.insertBefore(newcontent, scr);
+
+
+
+var newcontent = document.createElement('p');
+newcontent.id = 'syndicated-content';
+newcontent.appendChild(document.createTextNode(list.issuerName));
+
+var scr = document.getElementById('test');
+scr.parentNode.insertBefore(newcontent, scr);
 
 
 
