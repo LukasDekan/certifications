@@ -19,7 +19,7 @@ scr.parentNode.insertBefore(newcontent, scr);
 
 
 
-${<body>
+<body>
     <select name="" id="">
         <option>AWESOM</option>
         <option>ASDFSADF</option>
@@ -48,7 +48,7 @@ ${<body>
         <option>CREAM SUPI</option>
         <option>DESTRUCTION</option>
     </select>
-</body>}
+</body>
 
 var newcontent = document.createElement('p');
 newcontent.id = 'syndicated-content';
