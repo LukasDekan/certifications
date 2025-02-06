@@ -24,7 +24,7 @@
 // });
 
 function updateCertificate(){
-    let selection = selector.value;
+    let selection = getElementById("skill_option");
     // console.log(selection);
     // console.log("Test");
     switch(selection){
