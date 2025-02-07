@@ -22,30 +22,168 @@
 //     updateCertificate();
 //     console.log(event);
 // });
+let element = document.getElementById("skill_option");
+let element2 = document.getElementById("skill_level");
 
-function updateCertificate(){
-    let selection = getElementById("skill_option");
+
+
+element.addEventListener("change", updateImage);
+
+
+
+const imageChange = document.getElementById("image")
+const textChange = document.getElementById("text")
+
+
+
+function changeBackground(color) {
+    document.body.style.background = color;
+ }
+
+ function skillLevelOcatgon(){
+    let selection2 = document.getElementById("skill_level").value;
+    // console.log(selection);
+    // console.log("Test");
+    switch(selection2){
+        case "Ultra Skilled":
+            // document.body.appendChild("Congratulations!");
+            textChange.innerText = "You are the most Octagon of all the Octagons! Yes! Yes! You are! Congrats! Elmo loves you!\nCertified by: Jack Black and you're little friendly monster, Elmo";
+                console.log("Test One");
+            break;
+        case "Super Skilled":
+            textChange.innerText = "You're a proffessional Octagon!\nCertified by: Jack Black and you're little friendly monster, Elmo";
+                console.log("Test Two");
+            break;
+        case "Very Skilled":
+            textChange.innerText= "You are a very big Octagon!\nCertified by: Jack Black and you're little friendly monster, Elmo";
+                console.log("Test Three");
+            break;
+        case "Skilled":
+            textChange.innerText = "You are an Octagon!\nCertified by: Jack Black and you're little friendly monster, Elmo";
+                console.log("Test Four");
+            break;
+        }
+    } 
+    function skillLevelProgrammer(){
+        let selection2 = document.getElementById("skill_level").value;
+        // console.log(selection);
+        // console.log("Test");
+        switch(selection2){
+            case "Ultra Skilled":
+                // document.body.appendChild("Congratulations!");
+                textChange.innerText = "You are a skilled programmer pro proffessional.\nCertified by: Bill Gates. Yes, definitely Bill Gates";
+                    console.log("Test One");
+                break;
+            case "Super Skilled":
+                textChange.innerText = "You are a programmer proffessional.\nCertified by: Bill Gates. Yes, definitely Bill Gates";
+                    console.log("Test Two");
+                break;
+            case "Very Skilled":
+                textChange.innerText= "You are a very skilled programmer.\nCertified by: Bill Gates. Yes, definitely Bill Gates";
+                    console.log("Test Three");
+                break;
+            case "Skilled":
+                textChange.innerText = "You are a skilled programmer.\nCertified by: Bill Gates. Yes, definitely Bill Gates";
+                    console.log("Test Four");
+                break;
+            }
+        } 
+        function skillLevelDodgeball(){
+            let selection2 = document.getElementById("skill_level").value;
+            // console.log(selection);
+            // console.log("Test");
+            switch(selection2){
+                case "Ultra Skilled":
+                    // document.body.appendChild("Congratulations!");
+                    textChange.innerText = "You are the target of all dodgeball target!\nCertified by: You're classmate Lukas Dekan";
+                        console.log("Test One");
+                    break;
+                case "Super Skilled":
+                    textChange.innerText = "You are ultimate dodgeball target!\nCertified by: You're classmate Lukas Dekan";
+                        console.log("Test Two");
+                    break;
+                case "Very Skilled":
+                    textChange.innerText= "You are a pro at dodgeball target!\nCertified by: You're classmate Lukas Dekan";
+                        console.log("Test Three");
+                    break;
+                case "Skilled":
+                    textChange.innerText = "You are a dodgeball target!\nCertified by: You're classmate Lukas Dekan";
+                        console.log("Test Four");
+                    break;
+                }
+            } 
+function updateImage(){
+    let selection = document.getElementById("skill_option").value;
     // console.log(selection);
     // console.log("Test");
     switch(selection){
         case "Programmer":
             // document.body.appendChild("Congratulations!");
-            const programmer = new Image(438, 248);
-                programmer.src = "/img/binge-code.jpg";
-                document.body.appendChild(programmer);
+                imageChange.src = "/img/binge-code.jpg";
+                   console.log("Test One");
+                   element2.addEventListener("change", skillLevelProgrammer);
+                changeBackground("orange");  
             break;
         case "They're a true Octogon!":
-            const jackBlack = new Image(438, 248);
-                jackBlack.src = "/img/jack-black.jpg";
-                document.body.appendChild(jackBlack);
+                imageChange.src = "/img/jack-black.jpg";
+                console.log("Test Two");
+                element2.addEventListener("change", skillLevelOcatgon);
+                changeBackground("red");
+
             break;
         case "Dodgeball":
-            const dodgeball = new Image(438, 248);
-                dodgeball.src = "/img/muck.jpg";
-                document.body.appendChild(dodgeball);
-            break;
+                imageChange.src = "/img/muck.jpg";
+                console.log("Test Three");
+                element2.addEventListener("change", skillLevelDodgeball);
+                changeBackground("beige");
+            break;  
         }
-    } 
+    }
+    // if(imageChange.src = "/img/binge-code.jpg"){
+              
+    // }
+    //     else if(imageChange.src = "/img/jack-black.jpg"){
+
+
+    //     }
+    //     else if(imageChange.src = "/img/muck.jpg"){
+
+    //     }
+
+// function updateImage(){
+//     let selection = document.getElementById("skill_option").value;
+//     // console.log(selection);
+//     // console.log("Test");
+//     switch(selection){
+//         case "Programmer":
+//             // document.body.appendChild("Congratulations!");
+//             const programmer = new Image(438, 248);
+//                 programmer.src = "/img/binge-code.jpg";
+//                 document.body.appendChild(programmer);
+//                    console.log("Test One");
+//             break;
+//         case "They're a true Octogon!":
+//             const jackBlack = new Image(438, 248);
+//                 jackBlack.src = "/img/jack-black.jpg";
+//                 document.body.appendChild(jackBlack);
+//                 console.log("Test Two");
+
+//             break;
+//         case "Dodgeball":
+//             const dodgeball = new Image(438, 248);
+//                 dodgeball.src = "/img/muck.jpg";
+//                 document.body.appendChild(dodgeball);
+//                 console.log("Test Three");
+//             break;  
+//         }
+//     } 
+
+
+
+
+        // var newcontent = document.createElement('p');
+        // newcontent.id = 'syndicated-content';
+        // newcontent.appendChild(document.createTextNode(list.title));
 
 {/* <body>
     <select name="" id="">
